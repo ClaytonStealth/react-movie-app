@@ -30,6 +30,7 @@
 .nav-layout {
   display: flex;
   flex-direction: column;
+  width: 80vw;
 }
 .nav-bar {
   display: flex;
@@ -47,6 +48,10 @@
 a {
   color: white;
   text-decoration: none;
+}
+.home-page {
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

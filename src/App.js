@@ -514,8 +514,8 @@ const App = () => {
       errorElement: <ErrorPage />,
       children: [
         {
-          index: true,
           element: <HomePage />,
+          index: true,
         },
         {
           path: "/movies",
