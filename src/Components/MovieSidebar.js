@@ -4,10 +4,14 @@ const MovieSidebar = (props) => {
   const { movieList } = props;
   return (
     <div className='movie-sidebar'>
-      <h2>Movie Sidebar</h2>
+      <h2 className='sidebar-title'>Movie Sidebar</h2>
       {movieList.map((movieItem, index) => {
         return (
-          <Link key={index} to={`/movies/${movieItem.Title}`}>
+          <Link
+            key={index}
+            to={`/movies/${movieItem.Title}`}
+            style={{ textDecoration: "underline" }}
+          >
             {movieItem.Title}
           </Link>
         );

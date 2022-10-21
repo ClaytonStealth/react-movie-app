@@ -6,6 +6,7 @@ import MovieLayout from "./Layouts/MovieLayout";
 import MovieListPage from "./Pages/MovieListPage";
 import { useState } from "react";
 import ErrorPage from "./ErrorPage";
+import MoviePage from "./Pages/MoviePage";
 
 const sampleMovies = [
   {
@@ -524,6 +525,10 @@ const App = () => {
             {
               index: true,
               element: <MovieListPage movieList={movieList} />,
+            },
+            {
+              path: ":title",
+              element: <MoviePage movieList={movieList} />,
             },
           ],
         },
