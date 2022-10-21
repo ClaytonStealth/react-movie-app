@@ -10,7 +10,7 @@ const MovieSidebar = (props) => {
           <Link
             key={index}
             to={`/movies/${movieItem.Title}`}
-            style={{ textDecoration: "underline" }}
+            style={{ textDecoration: "underline", fontSize: "1.7rem" }}
           >
             {movieItem.Title}
           </Link>
