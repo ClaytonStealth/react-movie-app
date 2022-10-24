@@ -508,9 +508,47 @@ const sampleMovies = [
 
 const App = (props) => {
   const [movieList, setMovieList] = useState(sampleMovies);
-  const handleAddMovie = (title) => {
+  const handleAddMovie = (
+    title,
+    director,
+    movieYear,
+    rated,
+    released,
+    runtime,
+    genre,
+    writer,
+    actors,
+    plot,
+    language,
+    country,
+    awards,
+    metascore,
+    imdbRating,
+    imdbVotes,
+    imdbID,
+    type,
+    image
+  ) => {
     const newMovie = {
       Title: title,
+      Director: director,
+      Year: movieYear,
+      Rated: rated,
+      Released: released,
+      Runtime: runtime,
+      Genre: genre,
+      Writer: writer,
+      Actors: actors,
+      Plot: plot,
+      Language: language,
+      Country: country,
+      Awards: awards,
+      Metascore: metascore,
+      imdbRating,
+      imdbVotes,
+      imdbID,
+      Type: type,
+      Images: image,
     };
     console.log(newMovie);
     setMovieList([...movieList, newMovie]);

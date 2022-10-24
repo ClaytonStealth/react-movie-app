@@ -6,8 +6,8 @@ const MovieListPage = (props) => {
     <div>
       <h1></h1>
       <div className='movie-list'>
-        {movieList.map((movie) => {
-          return <MovieCard movie={movie} />;
+        {movieList.map((movie, index) => {
+          return <MovieCard movie={movie} key={index} />;
         })}
       </div>
     </div>
