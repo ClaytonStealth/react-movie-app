@@ -34,8 +34,9 @@
 }
 .nav-bar {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
 }
 .movie-layout {
   display: flex;
@@ -44,6 +45,12 @@
 .movie-sidebar {
   display: flex;
   flex-direction: column;
+  border: 2px solid white;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 10px;
+  width: 20%;
+  background-color: black;
 }
 
 a {
@@ -59,10 +66,11 @@ a {
   overflow-y: scroll;
 }
 .movie-list-card {
+  background-color: black;
   margin: 10px;
   padding: 10px;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 40px;
   /* width: 30vw; */
 }
 .movie-content {
@@ -71,6 +79,8 @@ a {
   margin-left: 80px;
 }
 
+.movie-list-card {
+}
 img {
   max-width: 400px;
 }
